@@ -5,11 +5,11 @@ module.exports = async () => {
     try{
         const connectionParams ={
             useNewUrlParser: true,
-            useCreateIndex: true,
-            useUnifieldTopology:true
+            // useCreateIndex: true,
+            // useUnifieldTopology:true
         };
         await mongoose.connect(
-            "mongodb://localhost/todo-app",
+            "mongodb://127.0.0.1:27017/krishna",
             connectionParams
             );
             console.log("connected to database.");
